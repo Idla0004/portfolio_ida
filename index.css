@@ -1,0 +1,185 @@
+@font-face {
+  font-family: montserrat_black;
+  src: url(/font/Montserrat-Black.ttf);
+}
+
+@font-face {
+  font-family: raleway_reg;
+  src: url(/font/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: raleway_medium;
+  src: url(/font/Raleway-Medium.ttf);
+}
+
+body {
+  background-color: #1c2632;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  font-family: montserrat_black;
+  font-size: clamp(2rem, 4.5vw, 3.8rem);
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-family: montserrat_black;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+p,
+ul {
+  font-family: raleway_reg;
+  font-size: 18px;
+}
+
+a {
+  font-family: raleway_medium;
+}
+
+/* hero container styling */
+#hero_container {
+  display: grid;
+  grid-template-areas:
+    "portrait text"
+    "portrait links";
+  grid-template-columns: 1fr 1fr;
+  margin: 50px 0 0;
+  gap: 40px;
+  color: #ede9de;
+  align-items: start;
+}
+
+#portrait_img {
+  grid-area: portrait;
+  max-width: 100%;
+  width: 100%; /* Bruger 100 procent så den fylder cellen */
+  min-width: 300px;
+  height: auto;
+  align-self: start;
+  border: solid 1px #feb161;
+}
+
+.text_content {
+  grid-area: text;
+}
+
+.hero_header {
+  margin-top: -10px;
+}
+
+.hero_text {
+  width: 100%;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-top: 30px;
+}
+
+.link_btns {
+  grid-area: links;
+  align-self: end;
+  display: flex; /* Brug flexbox for at holde knapperne på samme linje */
+  gap: 70px; /* Brug gap i stedet for margin-right på knapperne */
+  white-space: nowrap; /* Forhindrer linjeskift */
+}
+
+.link_btns a {
+  background-color: #feb161;
+  color: #1c2632;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 20px;
+  flex-shrink: 0; /* Forhindrer knapperne i at krympe for meget */
+}
+
+/* Internship wishes styling */
+#wish_container {
+  background-color: #a35139;
+  color: #ede9de;
+  display: flex;
+  margin: 2rem 0;
+  padding: 20px 2rem;
+  line-height: 1.5;
+}
+
+.pc_img {
+  max-width: 100%;
+  width: 100%; /* Bruger 100 procent så den fylder cellen */
+  min-width: 300px;
+  height: fit-content;
+  margin: auto;
+  border: solid 1px #feb161;
+  position: relative;
+  z-index: 1;
+}
+
+.wish_text {
+  margin: 0 20px;
+}
+
+@media (max-width: 768px) {
+  main {
+    max-width: 600px;
+    margin: 0;
+  }
+  h1 {
+    font-size: 22px;
+  }
+
+  p,
+  ul {
+    font-size: 14px;
+  }
+
+  a {
+    font-size: 15px;
+  }
+
+  #hero_container {
+    grid-template-areas:
+      "text portrait"
+      "text links";
+    gap: 0;
+    margin: 40px 10px;
+  }
+
+  #portrait_img {
+    max-width: 100%;
+    min-width: 150px;
+  }
+
+  .hero_text {
+    width: 100%;
+    min-width: 200px;
+    margin: 0;
+  }
+
+  .link_btns {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .link_btns a {
+    font-size: 15px;
+    padding: 5px 5px;
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  .pc_img {
+    z-index: -1;
+    display: none;
+  }
+
+  #wish_container {
+    flex-wrap: wrap;
+  }
+}
