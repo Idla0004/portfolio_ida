@@ -33,6 +33,11 @@ h2 {
   font-size: clamp(1rem, 2.5vw, 2rem);
 }
 
+h3 {
+  font-family: raleway_medium;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
 p,
 ul {
   font-family: raleway_reg;
@@ -58,7 +63,7 @@ a {
 
 #portrait_img {
   grid-area: portrait;
-  max-width: 100%;
+  max-width: 500px;
   width: 100%; /* Bruger 100 procent så den fylder cellen */
   min-width: 300px;
   height: auto;
@@ -84,9 +89,9 @@ a {
 .link_btns {
   grid-area: links;
   align-self: end;
-  display: flex; /* Brug flexbox for at holde knapperne på samme linje */
-  gap: 70px; /* Brug gap i stedet for margin-right på knapperne */
-  white-space: nowrap; /* Forhindrer linjeskift */
+  display: flex;
+  gap: 70px;
+  white-space: nowrap;
 }
 
 .link_btns a {
@@ -96,32 +101,81 @@ a {
   text-decoration: none;
   border-radius: 8px;
   font-size: 20px;
-  flex-shrink: 0; /* Forhindrer knapperne i at krympe for meget */
+  flex-shrink: 0;
 }
 
-/* Internship wishes styling */
-#wish_container {
+/* Tools container styling */
+#tools_container {
   background-color: #a35139;
-  color: #ede9de;
-  display: flex;
   margin: 2rem 0;
   padding: 20px 2rem;
-  line-height: 1.5;
+  color: #ede9de;
 }
 
-.pc_img {
-  max-width: 100%;
-  width: 100%; /* Bruger 100 procent så den fylder cellen */
-  min-width: 300px;
-  height: fit-content;
-  margin: auto;
-  border: solid 1px #feb161;
-  position: relative;
-  z-index: 1;
+#tools_container h2 {
+  text-align: start;
+  margin-bottom: 2rem;
 }
 
-.wish_text {
-  margin: 0 20px;
+.tools_columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.primary_tools,
+.secondary_tools {
+  display: flex;
+  flex-direction: column;
+}
+
+.headline_maintools,
+.headline_primtools {
+  margin: 0;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.tools_img {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+  align-items: center;
+  color: #ede9de;
+}
+
+.tools_img img {
+  max-width: 60px;
+  width: auto;
+  height: auto;
+}
+
+.tools_img p {
+  margin: 0;
+}
+
+/* Project container styling */
+#project_container {
+  background-color: #2c3b4e;
+  color: #ede9de;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2rem 0;
+  padding: 20px 2rem;
+}
+
+.project_carousel {
+  background-color: #ede9de;
+  display: block;
+  gap: 20px;
+}
+
+.project_carousel img {
+  max-width: 500px;
+  width: 100%;
+  min-width: 100px;
+  height: 300px;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -129,8 +183,9 @@ a {
     max-width: 600px;
     margin: 0;
   }
-  h1 {
+  .hero_header {
     font-size: 22px;
+    margin-top: 10px;
   }
 
   p,
@@ -143,9 +198,8 @@ a {
   }
 
   #hero_container {
-    grid-template-areas:
-      "text portrait"
-      "text links";
+    display: flex;
+    flex-wrap: wrap;
     gap: 0;
     margin: 40px 10px;
   }
@@ -172,14 +226,5 @@ a {
     padding: 5px 5px;
     flex: 1 1 auto;
     text-align: center;
-  }
-
-  .pc_img {
-    z-index: -1;
-    display: none;
-  }
-
-  #wish_container {
-    flex-wrap: wrap;
   }
 }
