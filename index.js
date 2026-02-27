@@ -1,3 +1,16 @@
+// side nav bar
+const menuBtn = document.getElementById("menu-btn");
+const navContainer = document.getElementById("nav_container");
+
+menuBtn.addEventListener("click", function () {
+  navContainer.classList.toggle("active");
+  // Skift knapteksten alt efter om menuen er aktiv
+  if (navContainer.classList.contains("active")) {
+    menuBtn.textContent = "X";
+  } else {
+    menuBtn.textContent = "☰";
+  }
+});
 // to do list java kode
 // Variabler
 const todoText = document.querySelector("#todo_input");
