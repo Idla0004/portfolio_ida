@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section id="hero_container">
+        <img
+          src="/img/portrait.webp"
+          alt="Portrait of Ida Hernvig"
+          id="portrait_img"
+        />
+        <div class="text_content">
+          <h1 class="hero_header">IDA HERNVIG</h1>
+          <p class="hero_text">
+            Jeg er frontend-studerende på Erhvervsakademi København og brænder
+            for at skabe brugervenlige og visuelle webløsninger.
+          </p>
+          <p>
+            Som færdiguddannet ser jeg mig selv i en rolle som frontend-udvikler
+            med designkompetencer, hvor jeg kan kombinere teknisk ekspertise med
+            kreativitet.
+          </p>
+          <p>
+            Med erfaring i HTML, CSS, JavaScript og Next.js - samt Figma til
+            design og prototyping - søger jeg en praktikplads, hvor jeg kan
+            udvikle mine JavaScript-færdigheder og arbejde med dynamiske
+            webapplikationer.
+          </p>
+          <p>
+            Er I et firma, der værdsætter kreativitet og teknisk nysgerrighed?
+            Så hører jeg gerne fra jer!
+          </p>
+        </div>
+        <div class="link_btns">
+          <a href="/">CV</a> <a href="/">PROJEKTER</a>
+        </div>
+      </section>
+      <section id="tools_container">
+        <h2>VÆRKTØJER</h2>
+        <div class="tools_columns">
+          <article class="primary_tools">
+            <h3 class="headline_maintools">Primære værktøjer</h3>
+            <div class="tools_img">
+              <img src="/img/htmlicon.webp" alt="HTML icon" />
+              <p>HTML</p>
+            </div>
+            <div class="tools_img">
+              <img src="/img/csscicon.webp" alt="CSS icon" />
+              <p>CSS</p>
+            </div>
+            <div class="tools_img">
+              <img src="/img/javascripticon.webp" alt="JavaScript icon" />
+              <p>JavaScript</p>
+            </div>
+            <div class="tools_img">
+              <img src="/img/nexticon.webp" alt="Next.js icon" />
+              <p>Next.js</p>
+            </div>
+            <div class="tools_img">
+              <img src="/img/vscodeicon.webp" alt="VS code icon" />
+              <p>VS Code</p>
+            </div>
+          </article>
+          <article class="secondary_tools">
+            <h3 class="headline_primtools">Sekundære værktøjer</h3>
+            <div class="tools_img">
+              <img src="/img/githubicon.webp" alt="Github Icon" />
+              <p>Github</p>
+            </div>
+            <div class="tools_img">
+              <img src="/img/figmaicon.webp" alt="Figma" />
+              <p>Figma</p>
+            </div>
+            <div class="tools_img">
+              <img src="/img/photoshopicon.webp" alt="photoshop icon" />
+              <p>Photoshop</p>
+            </div>
+            <div class="tools_img">
+              <img src="/img/procreateicon.webp" alt="ProCreate icon" />
+              <p>ProCreate</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects_section">
+        <h2 class="project_header">PROJEKTER</h2>
+        <div class="projects_wrapper">
+          <div class="projects_container">
+            <article class="project_carousel">
+              <!-- For to-do appen -->
+              <div class="carousel_element">
+                <div>
+                  <button
+                    id="btntodo"
+                    class="tab active_tab"
+                    data-filter="todo"
+                  >
+                    To-Do
+                  </button>
+                  <button id="btndone" class="tab" data-filter="done">
+                    Done
+                  </button>
+                </div>
+                <section id="todolist">
+                  <div class="todo-box">
+                    <input
+                      type="text"
+                      id="todo_input"
+                      placeholder="Add to-do.."
+                    />
+                    <input
+                      type="number"
+                      name="Number"
+                      id="amount_input"
+                      placeholder="Amount"
+                    />
+                    <button class="writetodobtn">Add to list</button>
+                  </div>
+                  <div class="info">
+                    <p class="important">
+                      Done? - Check off
+                      <img
+                        src="img/unchecked.webp"
+                        alt="unchecked circle icon"
+                        class="uncheckedcircle"
+                      />
+                    </p>
+                    <p class="important">
+                      Important? - Check off
+                      <img
+                        src="img/star.webp"
+                        alt="star icon"
+                        class="uncheckedstar"
+                      />
+                    </p>
+                    <p class="important">
+                      Delete? - Check off
+                      <img
+                        src="img/trashclosed.webp"
+                        alt="trash can icon"
+                        class="trashicon"
+                      />
+                    </p>
+                  </div>
+                  <ul class="todo_container"></ul>
+                </section>
+                <section id="donelist">
+                  <div class="done-box hidden">
+                    <ul class="done_container"></ul>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel_text">
+                <h3>ToDo App</h3>
+                <p>
+                  Vi skulle udvikle en funktionel ToDo-app og havde fokus på
+                  JavaScript, DOM-manipulation, LocalStorage og relevant
+                  feedback. Vi skulle ToDo-appen interaktiv med klikbare
+                  elementer og inputfelter, der kan oprette, markere, slette og
+                  sendes fra “to do” til “done”. Dette giver også ToDo-appen
+                  visuelt feedback ud fra animationer - som en opgave, der er
+                  klikket af eller en skraldespand, der åbner og lukker, når en
+                  opgave bliver slettet. ToDo-appen virker her på siden, prøv
+                  engang.
+                </p>
+                <a href="/">GitHub</a>
+              </div>
+            </article>
+          </div>
+          <div class="projects_container">
+            <article class="project_carousel">
+              <div class="carousel_element video_container">
+                <video autoplay muted playsinline loop>
+                  <source src="/img/NVfoto2.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="carousel_text">
+                <h3>NV-Foto</h3>
+                <p>
+                  Redesign af hjemmeside for NV-Foto. Vi havde til opgave at
+                  modernisere deres hjemmeside, ud fra specifikke design ønsker,
+                  gøre den responsiv og mere moderne. Vi kodede siden i Astro
+                  frameworks og sammen lavede vi research, brugerinterviews,
+                  design og prototype. Jeg stod for Pas Foto siden samt Kamera
+                  siden, hvor jeg tilføjede hover effekter for mere interaktion
+                  (ses på video) og hjalp med at rette til i min projektgruppes
+                  kode dele.
+                </p>
+                <a href="/">GitHub</a>
+                <a href="/">NV-Foto</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="kontakt-kasse"><h2>KONTAKT</h2></div>
+      <div class="contact">
+        <a href="/">Mail: Idla0004@stud.ek.dk</a>
+        <a href="/">Telefon: 21867706</a>
+        <a href="/">LinkedIn</a>
+        <a href="/">GitHub</a>
+      </div>
+    </footer>
+  </body>
+</html>
