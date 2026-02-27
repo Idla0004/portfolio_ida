@@ -90,37 +90,67 @@
       </section>
 
       <section id="project_container">
-        <h2>PROJEKTER</h2>
         <article class="project_carousel">
-          <img src="/img/nvfoto1.png" alt="NV Foto eksamens projekt" />
-          <h3>Virksomhedssite - Fotobutik, NV-Foto</h3>
-          <p>Indsæt tekst her</p>
-          <a href="/" class="github_btn">GitHub</a>
+          <!-- For to-do appen -->
+          <div class="todo-appen">
+            <h3>To-Do App</h3>
+            <div>
+              <button id="btntodo" class="tab active_tab" data-filter="todo">
+                To-Do
+              </button>
+              <button id="btndone" class="tab" data-filter="done">Done</button>
+            </div>
+            <section id="todolist">
+              <div class="todo-box">
+                <input type="text" id="todo_input" placeholder="Add to-do.." />
+                <input
+                  type="number"
+                  name="Number"
+                  id="amount_input"
+                  placeholder="Amount"
+                />
+                <button class="writetodobtn">Add to list</button>
+              </div>
+              <div class="info">
+                <p class="important">
+                  Done? - Check off
+                  <img
+                    src="img/unchecked.webp"
+                    alt="unchecked circle icon"
+                    class="uncheckedcircle"
+                  />
+                </p>
+                <p class="important">
+                  Important? - Check off
+                  <img
+                    src="img/star.webp"
+                    alt="star icon"
+                    class="uncheckedstar"
+                  />
+                </p>
+                <p class="important">
+                  Delete? - Check off
+                  <img
+                    src="img/trashclosed.webp"
+                    alt="trash can icon"
+                    class="trashicon"
+                  />
+                </p>
+              </div>
+              <ul class="todo_container"></ul>
+            </section>
+            <section id="donelist">
+              <div class="done-box hidden">
+                <ul class="done_container"></ul>
+              </div>
+            </section>
+            <p>
+              I frontend valgfaget lavede vi en to-do app med localstorage. Min
+              to-do liste virker også her på siden, prøv den gerne ad.
+            </p>
+          </div>
         </article>
-        <article class="project_carousel">
-          <img
-            src="/img/soelve1.png"
-            alt="Soelve Storm psykolog - Virksomhedssite"
-          />
-          <h3>Virksomhedssite - Psykolog, Sølve Storm</h3>
-          <p>Indsæt tekst her</p>
-          <a href="/" class="github_btn">GitHub</a>
-        </article>
-        <article class="project_carousel">
-          <img
-            src="/img/bloomingbeauty1.png"
-            alt="Andet semester projekt - Blooming Beauty"
-          />
-          <h3>Framework og API projekt - Blooming Beauty</h3>
-          <p>Indsæt tekst her</p>
-          <a href="/" class="github_btn">GitHub</a>
-        </article>
-        <article class="project_carousel">
-          <img src="/img/todoapp1.png" alt="Project 4" />
-          <h3>To-Do app projekt</h3>
-          <p>Indsæt tekst her</p>
-          <a href="/" class="github_btn">GitHub</a>
-        </article>
+        <article class="project_carousel"></article>
       </section>
     </main>
     <footer></footer>
