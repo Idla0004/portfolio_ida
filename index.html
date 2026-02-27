@@ -8,10 +8,19 @@
     <title>Document</title>
   </head>
   <body>
+    <button class="hamburger-menu" id="menu-btn">☰</button>
+    <div id="nav_container">
+      <ul class="navbar">
+        <li><a href="#hero_container">Om mig</a></li>
+        <li><a href="#tools_container">Værktøjer</a></li>
+        <li><a href="#projects_section">Projekter</a></li>
+        <li><a href="#footer">Kontakt</a></li>
+      </ul>
+    </div>
     <main>
       <section id="hero_container">
         <img
-          src="/img/portrait.webp"
+          src="/img/portrait1.webp"
           alt="Portrait of Ida Hernvig"
           id="portrait_img"
         />
@@ -38,7 +47,15 @@
           </p>
         </div>
         <div class="link_btns">
-          <a href="/">CV</a> <a href="/">PROJEKTER</a>
+          <a
+            href="https://www.linkedin.com/in/ida-hernvig-66753116b/"
+            target="_blank"
+            class="link_btn1"
+            >LINKEDIN</a
+          >
+          <a href="#projects_section" target="_blank" class="link_btn2"
+            >PROJEKTER</a
+          >
         </div>
       </section>
       <section id="tools_container">
@@ -170,7 +187,12 @@
                   opgave bliver slettet. ToDo-appen virker her på siden, prøv
                   engang.
                 </p>
-                <a href="/">GitHub</a>
+                <a
+                  href="https://github.com/Idla0004/todo_opgave"
+                  target="_blank"
+                  class="github_link"
+                  >GitHub</a
+                >
               </div>
             </article>
           </div>
@@ -194,21 +216,61 @@
                   (ses på video) og hjalp med at rette til i min projektgruppes
                   kode dele.
                 </p>
-                <a href="/">GitHub</a>
-                <a href="/">NV-Foto</a>
+                <a
+                  href="https://github.com/Idla0004/redesign2sem"
+                  target="_blank"
+                  class="github_link"
+                  >GitHub</a
+                >
+                <a
+                  href="http://nv-foto.dk/"
+                  target="_blank"
+                  class="website_link"
+                  >NV-Foto</a
+                >
               </div>
             </article>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer id="footer">
       <div class="kontakt-kasse"><h2>KONTAKT</h2></div>
       <div class="contact">
-        <a href="/">Mail: Idla0004@stud.ek.dk</a>
-        <a href="/">Telefon: 21867706</a>
-        <a href="/">LinkedIn</a>
-        <a href="/">GitHub</a>
+        <a href="mailto:Idla0004@stud.ek.dk" target="_blank" class="footer_link"
+          ><img
+            src="/img/mailicon.webp"
+            alt="letter icon"
+            class="footer_icon"
+          />Mail: Idla0004@stud.ek.dk</a
+        >
+        <a href="tel: +45 21867706" target="_blank" class="footer_link"
+          ><img
+            src="/img/phoneicon.webp"
+            alt="phone icon"
+            class="footer_icon"
+          />Telefon: 21867706</a
+        >
+        <a
+          href="https://www.linkedin.com/in/ida-hernvig-66753116b/"
+          target="_blank"
+          class="footer_link"
+          ><img
+            src="/img/linkedinicon.webp"
+            alt="linkedin icon"
+            class="footer_icon"
+          />LinkedIn</a
+        >
+        <a
+          href="https://github.com/Idla0004"
+          target="_blank"
+          class="footer_link"
+          ><img
+            src="/img/githubicon.webp"
+            alt="github icon"
+            class="footer_icon"
+          />GitHub</a
+        >
       </div>
     </footer>
   </body>
