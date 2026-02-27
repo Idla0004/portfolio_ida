@@ -1,21 +1,21 @@
 @font-face {
   font-family: montserrat_black;
-  src: url(/font/Montserrat-Black.ttf);
+  src: url(../portfolio/font/Montserrat-Black.ttf);
 }
 
 @font-face {
   font-family: montserrat_bold;
-  src: url(/font/Montserrat-Bold.ttf);
+  src: url(../portfolio/font/Montserrat-Bold.ttf);
 }
 
 @font-face {
   font-family: raleway_reg;
-  src: url(/font/Raleway-Regular.ttf);
+  src: url(../portfolio/font/Raleway-Regular.ttf);
 }
 
 @font-face {
   font-family: raleway_medium;
-  src: url(/font/Raleway-Medium.ttf);
+  src: url(../portfolio/font/Raleway-Medium.ttf);
 }
 
 body {
@@ -37,6 +37,7 @@ body {
   border-bottom: solid 1px #ede9de;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  border-right: none;
   z-index: 2;
 }
 
@@ -54,6 +55,8 @@ body {
   height: 50px;
   border-top: solid 1px #ede9de;
   border-left: solid 1px #ede9de;
+  border-bottom: solid 1px #ede9de;
+  border-right: none;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   font-size: 18px;
@@ -414,7 +417,6 @@ button {
   width: 90px;
   height: 40px;
   border: solid 2px #4c4d52;
-  font-family: poppins;
   border-radius: 5px;
   padding-left: 5px;
   font-size: 12px;
@@ -446,7 +448,6 @@ ul,
   display: flex;
   list-style: none;
   border-bottom: solid 1.5px #4c4d52;
-  font-family: poppins;
   font-size: 18px;
   margin: 1.5rem 20px 0px 20px;
   padding-bottom: 5px;
