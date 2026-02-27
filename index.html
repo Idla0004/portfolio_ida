@@ -89,70 +89,127 @@
         </div>
       </section>
 
-      <section id="project_container">
-        <article class="project_carousel">
-          <!-- For to-do appen -->
-          <div class="todo-appen">
-            <h3>To-Do App</h3>
-            <div>
-              <button id="btntodo" class="tab active_tab" data-filter="todo">
-                To-Do
-              </button>
-              <button id="btndone" class="tab" data-filter="done">Done</button>
-            </div>
-            <section id="todolist">
-              <div class="todo-box">
-                <input type="text" id="todo_input" placeholder="Add to-do.." />
-                <input
-                  type="number"
-                  name="Number"
-                  id="amount_input"
-                  placeholder="Amount"
-                />
-                <button class="writetodobtn">Add to list</button>
+      <section id="projects_section">
+        <h2 class="project_header">PROJEKTER</h2>
+        <div class="projects_wrapper">
+          <div class="projects_container">
+            <article class="project_carousel">
+              <!-- For to-do appen -->
+              <div class="carousel_element">
+                <div>
+                  <button
+                    id="btntodo"
+                    class="tab active_tab"
+                    data-filter="todo"
+                  >
+                    To-Do
+                  </button>
+                  <button id="btndone" class="tab" data-filter="done">
+                    Done
+                  </button>
+                </div>
+                <section id="todolist">
+                  <div class="todo-box">
+                    <input
+                      type="text"
+                      id="todo_input"
+                      placeholder="Add to-do.."
+                    />
+                    <input
+                      type="number"
+                      name="Number"
+                      id="amount_input"
+                      placeholder="Amount"
+                    />
+                    <button class="writetodobtn">Add to list</button>
+                  </div>
+                  <div class="info">
+                    <p class="important">
+                      Done? - Check off
+                      <img
+                        src="img/unchecked.webp"
+                        alt="unchecked circle icon"
+                        class="uncheckedcircle"
+                      />
+                    </p>
+                    <p class="important">
+                      Important? - Check off
+                      <img
+                        src="img/star.webp"
+                        alt="star icon"
+                        class="uncheckedstar"
+                      />
+                    </p>
+                    <p class="important">
+                      Delete? - Check off
+                      <img
+                        src="img/trashclosed.webp"
+                        alt="trash can icon"
+                        class="trashicon"
+                      />
+                    </p>
+                  </div>
+                  <ul class="todo_container"></ul>
+                </section>
+                <section id="donelist">
+                  <div class="done-box hidden">
+                    <ul class="done_container"></ul>
+                  </div>
+                </section>
               </div>
-              <div class="info">
-                <p class="important">
-                  Done? - Check off
-                  <img
-                    src="img/unchecked.webp"
-                    alt="unchecked circle icon"
-                    class="uncheckedcircle"
-                  />
+              <div class="carousel_text">
+                <h3>ToDo App</h3>
+                <p>
+                  Vi skulle udvikle en funktionel ToDo-app og havde fokus på
+                  JavaScript, DOM-manipulation, LocalStorage og relevant
+                  feedback. Vi skulle ToDo-appen interaktiv med klikbare
+                  elementer og inputfelter, der kan oprette, markere, slette og
+                  sendes fra “to do” til “done”. Dette giver også ToDo-appen
+                  visuelt feedback ud fra animationer - som en opgave, der er
+                  klikket af eller en skraldespand, der åbner og lukker, når en
+                  opgave bliver slettet. ToDo-appen virker her på siden, prøv
+                  engang.
                 </p>
-                <p class="important">
-                  Important? - Check off
-                  <img
-                    src="img/star.webp"
-                    alt="star icon"
-                    class="uncheckedstar"
-                  />
-                </p>
-                <p class="important">
-                  Delete? - Check off
-                  <img
-                    src="img/trashclosed.webp"
-                    alt="trash can icon"
-                    class="trashicon"
-                  />
-                </p>
+                <a href="/">GitHub</a>
               </div>
-              <ul class="todo_container"></ul>
-            </section>
-            <section id="donelist">
-              <div class="done-box hidden">
-                <ul class="done_container"></ul>
-              </div>
-            </section>
-            <p>
-              I frontend valgfaget lavede vi en to-do app med localstorage. Min
-              to-do liste virker også her på siden, prøv den gerne ad.
-            </p>
+            </article>
           </div>
-        </article>
-        <article class="project_carousel"></article>
+          <div class="projects_container">
+            <article class="project_carousel">
+              <div class="carousel_element video_container">
+                <video autoplay muted playsinline loop>
+                  <source src="/img/NVfoto2.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="carousel_text">
+                <h3>NV-Foto</h3>
+                <p>
+                  Redesign af hjemmeside for NV-Foto. Vi havde til opgave at
+                  modernisere deres hjemmeside, ud fra specifikke design ønsker,
+                  gøre den responsiv og mere moderne. Vi kodede siden i Astro
+                  frameworks og sammen lavede vi research, brugerinterviews,
+                  design og prototype. Jeg stod for Pas Foto siden samt Kamera
+                  siden, hvor jeg tilføjede hover effekter for mere interaktion
+                  (ses på video) og hjalp med at rette til i min projektgruppes
+                  kode dele.
+                </p>
+                <a href="/">GitHub</a>
+                <a href="/">NV-Foto</a>
+              </div>
+            </article>
+          </div>
+        </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="kontakt-kasse"><h2>KONTAKT</h2></div>
+      <div class="contact">
+        <a href="/">Mail: Idla0004@stud.ek.dk</a>
+        <a href="/">Telefon: 21867706</a>
+        <a href="/">LinkedIn</a>
+        <a href="/">GitHub</a>
+      </div>
+    </footer>
   </body>
 </html>
