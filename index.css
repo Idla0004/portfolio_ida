@@ -410,6 +410,7 @@ button {
   border-radius: 5px;
   padding-left: 5px;
   font-size: 12px;
+  color: #1c2632;
 }
 
 #amount_input {
@@ -420,6 +421,7 @@ button {
   border-radius: 5px;
   padding-left: 5px;
   font-size: 12px;
+  color: #1c2632;
 }
 
 .writetodobtn {
